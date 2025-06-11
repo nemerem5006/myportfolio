@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">MyPortfolio</a>
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden md:flex space-x-4">
+                <li><a href="index.html" class="hover:text-blue-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-300">About</a></li>
+                <li><a href="projects.html" class="hover:text-blue-300">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-blue-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden bg-blue-500 text-white">
+        <a href="index.html" class="block py-2 px-4 text-sm hover:bg-blue-700">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-sm hover:bg-blue-700">About</a>
+        <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-blue-700">Projects</a>
+        <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-blue-700">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl text-gray-600 mb-8">Showcasing my skills and projects.</p>
+            <a href="projects.html" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 text-lg">View Projects</a>
+             <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 text-lg">Get in touch</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-4 my-8">
+        <section id="home-content">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Home Page Content</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                This is the home page. You can introduce yourself briefly here and guide visitors to other sections of your portfolio.
+                Use Tailwind CSS classes to style your content and make it responsive.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
